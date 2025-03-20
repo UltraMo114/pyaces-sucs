@@ -3,9 +3,6 @@
 
 A Python implementation of **aces-core**, providing a streamlined workflow to convert RAW images into display-ready SDR/HDR images with consistent cross-device viewing experiences.
 
-![Demo](https://via.placeholder.com/800x400.png?text=HDR/SDR+Comparison+Demo)
-*(Replace with actual demo image)*
-
 ## Key Features
 - **RAW to SDR/HDR Conversion**: Convert RAW images to display-optimized formats:
   - **SDR**: JPEG/PNG with Gamma OETF
