@@ -46,7 +46,7 @@ python main.py input.raw --format avif --eotf pq --max_luminance 1000
 - `--format`: jpeg/png/avif/heic
 - `--eotf`: gamma/pq/hlg/gainmap (SDR defaults to gamma)
 - `--reference_luminance`: Display brightness (nits), default=100
-- `--max_luminance`: Scene brightness (nits), default=4000
+- `--max_luminance`: Scene brightness (nits), default=1000
 
 ### 2. Web Interface (app.py)
 ```bash
@@ -62,25 +62,13 @@ python app.py
    - IDT application
 2. **ACES Central Space Conversion**:
    - Scene-referred linear RGB
-3. **sUCS ODT**:
-   ```python
-   def sucs_odt(image, reference_lum, max_lum):
-       # 1. LMS cone adaptation
-       # 2. Chroma compression
-       # 3. EOTF encoding
-       return display_encoded_image
-   ```
-4. **Format Encoding**:
-   - PQ/HLG via OpenCV
-   - GainMap via Pillow-HEIF
+
+3. **Format Encoding**:
+   - Gamma  via Pillow
+   - PQ/HLG/GainMap via Pillow-HEIF
 
 ## Supported Cameras
-Tested with:
-- Sony α7 IV (.arw)
-- Canon EOS R5 (.cr3)
-- Nikon Z9 (.nef)
-
-*(Add your camera model via issues)*
+Any Cameras
 
 ## Roadmap
 - [ ] GPU acceleration
