@@ -83,13 +83,4 @@ PRs welcome! Key development areas:
 
 ## License
 MIT License (see LICENSE)
-``` 
 
-This README:
-1. Uses technical terms from ACES/sUCS documentation
-2. Highlights key differentiators from traditional ACES
-3. Provides clear installation/usage instructions
-4. Maintains scientific accuracy while being approachable
-5. Includes placeholder sections (demo image, cameras) for easy customization
-
-Would you like me to expand any specific section?
